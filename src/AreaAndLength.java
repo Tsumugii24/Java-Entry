@@ -18,7 +18,6 @@ class Triangle {
     private int a;
     private int b;
     private int c;
-    private boolean boo;
 
     public void initTriangle(int a1, int b1, int c1) {
         a = a1;
@@ -27,6 +26,7 @@ class Triangle {
     }
 
     public boolean isTriangle() {
+        boolean boo;
         if ((a + b > c) && (a + c > b) && (b + c > a)) {
             boo = true;
         } else {
@@ -36,8 +36,7 @@ class Triangle {
     }
 
     public int getTriangleLength() {
-        int Tlen = a + b + c;
-        return Tlen;
+        return a + b + c;
     }
 
     public double getTriangleArea() {
