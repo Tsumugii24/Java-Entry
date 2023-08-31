@@ -2,16 +2,16 @@ import java.util.Scanner;
 
 public class AreaAndLengthInput {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int x, y, z, Tlength;
         double T_area;
 
         System.out.print("请输入第一条边边长：");
-        x = sc.nextInt();
+        x = scanner.nextInt();
         System.out.print("请输入第二条边边长：");
-        y = sc.nextInt();
+        y = scanner.nextInt();
         System.out.print("请输入第三条边边长：");
-        z = sc.nextInt();
+        z = scanner.nextInt();
 
         TriangleInput MyTriangle = new TriangleInput();
         MyTriangle.initTriangleInput(x, y, z);

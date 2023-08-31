@@ -133,7 +133,7 @@ public class GradeMath {
         int totalClasses = scanner.nextInt();
 
         if (totalClasses < 1) {
-            System.out.println("班级总数不能小于1");
+            System.out.println("班级总数不能为零");
             return;
         }
 
@@ -144,7 +144,7 @@ public class GradeMath {
             int students = scanner.nextInt();
 
             if (students < 1) {
-                System.out.println("学生数不能小于1");
+                System.out.println("学生数不能为零");
                 return;
             }
 

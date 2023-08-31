@@ -51,7 +51,7 @@ public class Game implements PuzzleGame {
         System.out.println("是否继续玩，N:退出系统");
         String choice = scanner.nextLine();
 
-        if (choice.equalsIgnoreCase("N")) {
+        if (choice.equals("N") || choice.equals("n")) {
             continuePlaying = false;
             System.out.println("游戏结束！");
         }

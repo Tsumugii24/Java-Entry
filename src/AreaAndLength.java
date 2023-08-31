@@ -19,10 +19,10 @@ class Triangle {
     private int b;
     private int c;
 
-    public void initTriangle(int a1, int b1, int c1) {
-        a = a1;
-        b = b1;
-        c = c1;
+    public void initTriangle(int a, int b, int c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
     public boolean isTriangle() {

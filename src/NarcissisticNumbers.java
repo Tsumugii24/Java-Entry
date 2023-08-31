@@ -1,3 +1,5 @@
+import static java.lang.Math.pow;
+
 public class NarcissisticNumbers {
     public static void main(String[] args) {
         int count = 0; // 计数器，记录已输出的水仙花数个数
@@ -7,7 +9,7 @@ public class NarcissisticNumbers {
             int digit2 = (i / 10) % 10; // 十位数
             int digit3 = i % 10; // 个位数
 
-            int sumOfCubes = digit1 * digit1 * digit1 + digit2 * digit2 * digit2 + digit3 * digit3 * digit3;
+            int sumOfCubes = (int)(pow(digit1, 3) + pow(digit2, 3) + pow(digit3, 3));
 
             if (sumOfCubes == i) {
                 System.out.print(i + " ");
@@ -18,5 +20,6 @@ public class NarcissisticNumbers {
                 }
             }
         }
+        System.out.println("总数为：" + count);
     }
 }

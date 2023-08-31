@@ -2,7 +2,7 @@
 public class GradeDemo {
 
     public static void main(String[] args) {
-        GradeMaths g[] = new GradeMaths[4];
+        GradeMaths[] g = new GradeMaths[4];
         g[0] = new GradeMaths("信息一班", 3);
         g[1] = new GradeMaths("信息二班", 2);
         g[2] = new VipGraduateMaths("信息三班", 2);
