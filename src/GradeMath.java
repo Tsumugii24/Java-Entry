@@ -1,14 +1,14 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class gradeMath {
+public class GradeMath {
     static int classnum; // 班级个数
     int cnum; // 班号
     int snum; // 学生数
     int[] grade; // 全班成绩
 
     // 构造方法,初始化班号和人数
-    gradeMath(int cnum, int snum) {
+    GradeMath(int cnum, int snum) {
         classnum++; // 班级数加1
         this.cnum = cnum; // 获得班号
         this.snum = snum; // 获得班级人数
@@ -137,7 +137,7 @@ public class gradeMath {
             return;
         }
 
-        gradeMath[] classes = new gradeMath[totalClasses];
+        GradeMath[] classes = new GradeMath[totalClasses];
 
         for (int i = 0; i < totalClasses; i++) {
             System.out.print("\n请输入班级 " + (i + 1) + " 的学生数：");
@@ -148,7 +148,7 @@ public class gradeMath {
                 return;
             }
 
-            classes[i] = new gradeMath(i + 1, students);
+            classes[i] = new GradeMath(i + 1, students);
             classes[i].inputGrades();
         }
 

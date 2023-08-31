@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class gradeMaths {
+public class GradeMaths {
     int snum;
     static int classnum;
     String cnum;
@@ -9,7 +9,7 @@ public class gradeMaths {
     int ming;
     float avggra;
 
-    gradeMaths(String clanum, int snum) {
+    GradeMaths(String clanum, int snum) {
         classnum++;
         cnum = clanum;
         this.snum = snum;

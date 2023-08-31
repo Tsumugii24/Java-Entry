@@ -58,7 +58,7 @@ class Graduate implements Istudent, Iteacher {
     }
 }
 
-public class graduate_student {
+public class GraduateStudent {
     public static void main(String[] args) {
         // 创建一个姓名为"zhangsan"的研究生对象
         Graduate zhangsan = new Graduate("zhangsan", "male", 25, 10000, 1500);

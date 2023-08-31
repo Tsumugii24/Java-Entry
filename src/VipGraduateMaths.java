@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class VIP_gradeMaths extends gradeMaths {
+public class VipGraduateMaths extends GradeMaths {
     int maxk;
     int mink;
     String sno[];
 
-    public VIP_gradeMaths(String clanum, int snum) {
+    public VipGraduateMaths(String clanum, int snum) {
         super(clanum, snum);
         sno = new String[snum];
     }

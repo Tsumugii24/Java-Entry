@@ -89,7 +89,7 @@ public class Check {
         }
         return false;
 	}
-	//在挂失是 找回密码需要验证， 姓名，身份证号，和账户是否与注册时保持一致
+	//在挂失时 找回密码需要验证:姓名，身份证号，账户信息是否与注册时保持一致
 	public String  check3(String name, String userid,String countname) throws IOException{
 		
 		File file=new File("Message.txt");   //创建文件类
@@ -139,7 +139,7 @@ public class Check {
 	//验证用户名和密码是否为中文
 	public boolean checkcountname(String countname)
 	{
-		 Pattern p = Pattern.compile("[\u4e00-\u9fa5]");
+		 Pattern p = Pattern.compile("[\u4e00-\u9fa5]"); // 正则表达
 	        Matcher m = p.matcher(countname);
 	        if (m.find()) {
 	            return true;
